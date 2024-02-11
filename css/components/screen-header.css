@@ -1,0 +1,49 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 25px 20px;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #eeeeee;
+}
+
+.screen-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+@keyframes rotategear {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes searchbeat {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotategear 1s linear infinite;
+}
+
+.screen-header__icons .fa-search:hover {
+  animation: searchbeat 1s linear infinite;
+}
